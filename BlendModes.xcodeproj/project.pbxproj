@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		11131BEF2EB3168400ADB22D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 11131BEE2EB3168000ADB22D /* README.md */; };
+		11131BF12EB317CB00ADB22D /* LICENSE in Sources */ = {isa = PBXBuildFile; fileRef = 11131BF02EB317C600ADB22D /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11131BEE2EB3168000ADB22D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = README.md; sourceTree = "<group>"; };
+		11131BF02EB317C600ADB22D /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LICENSE; sourceTree = "<group>"; };
 		114CA5532EAAFE990050F545 /* BlendModes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlendModes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -37,6 +39,7 @@
 		114CA54A2EAAFE990050F545 = {
 			isa = PBXGroup;
 			children = (
+				11131BF02EB317C600ADB22D /* LICENSE */,
 				11131BEE2EB3168000ADB22D /* README.md */,
 				114CA5552EAAFE990050F545 /* BlendModes */,
 				114CA5542EAAFE990050F545 /* Products */,
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11131BEF2EB3168400ADB22D /* README.md in Sources */,
+				11131BF12EB317CB00ADB22D /* LICENSE in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
