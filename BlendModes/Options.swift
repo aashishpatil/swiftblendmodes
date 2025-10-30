@@ -1,5 +1,5 @@
 //
-//  BlendModesApp.swift
+//  Options.swift
 //  BlendModes
 //
 //  Created by Aashish Patil on 10/23/25.
@@ -18,16 +18,17 @@
 
 
 import SwiftUI
+import Observation
 
-@main
-struct BlendModesApp: App {
+@Observable
+class BlendOptions {
     
-    var blendOptions = BlendOptions()
+    @ObservationIgnored
+    let blendModes: [BlendMode] = [.normal, .color, .colorBurn, .colorDodge, .darken, .destinationOut, .destinationOver, .difference, .exclusion, .hardLight, .hue, .lighten, .luminosity, .multiply, .plusDarker, .plusLighter, .saturation, .screen, .softLight, .sourceAtop]
     
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-        .environment(blendOptions)
-    }
+    @ObservationIgnored
+    let overlayColors: [Color] = [.white, .black, .red, .green, .blue]
+    
+    var overlayColor: Color = .white
+    var overlayOpacity: Double = 0.5
 }
